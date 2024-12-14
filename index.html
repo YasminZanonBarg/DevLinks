@@ -1,0 +1,98 @@
+<!-- "!" Atalho para já adicionar código default HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <!-- root element / parent -->
+  <!-- head: 1º Children element -->
+  <!-- head: Tag que armazena todas as configurações não visíveis da nossa página -->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- "./" = Está nesta própria pasta-->
+  </head>
+  <!-- body: 2º Children element -->
+  <!-- body: Tag que armazena todas as informações vísiveis na página -->
+  <body>
+    <!-- div: caixa generica sem estilo -->
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar.png"
+          alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo azul."
+        />
+        <p>@maykbrito</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <!-- ul: Propriedade para listas-->
+      <ul>
+        <!-- li: Item da lista-->
+        <li>
+          <a href="#">Inscrever-se no NLW</a>
+        </li>
+
+        <li>
+          <a href="#">Baixar meu e-book</a>
+        </li>
+
+        <!-- target="_blank": Abrir página sem fechar a atual-->
+        <li>
+          <a href="https://github.com.br" target="_blank">Ver meu portfólio</a>
+        </li>
+
+        <li>
+          <a href="https://rocketseat.com.br" target="_blank"
+            >Conheça o Explorer</a
+          >
+        </li>
+      </ul>
+      <!-- Atalho para escrever a tag abaixo: div#social-links -->
+      <div id="social-links">
+        <a href="https://github.com/maykbrito" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="https://instagram.com/maykbrito" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://youtube.com/maykbrito" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="https://linkedin.com/in/maykbrito" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+
+      <footer>
+        Feito com ♥ pela
+        <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>
+      </footer>
+    </div>
+    <!-- Código para instalar o inicon. link: https://ionic.io/ionicons/usage -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -47,7 +47,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   /* height: 720px; */
   /* tamanho borda; textura, cor*/
   /* border: 1px solid red; */
